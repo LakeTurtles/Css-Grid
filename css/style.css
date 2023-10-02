@@ -232,8 +232,8 @@ body {
     /* grid-template-columns: repeat(auto-fill, 300px); */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
-    align-items: flex-start;
-    justify-items: flex-start;
+    align-items: flex-end;
+    justify-items: flex-end;
     background-color: blueviolet;
     justify-content: space-around;
 }
