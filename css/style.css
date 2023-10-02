@@ -1,0 +1,253 @@
+* {
+    margin : 0 ;
+    padding : 0; 
+    
+}
+
+body {
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #66666665;
+}
+
+
+.navbar-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    border: 2px solid grey;
+    column-gap: 20px;
+}
+
+.links-box {
+   
+    grid-column-start: 3 ;
+    grid-column-end: 4;
+     grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.navbar-cell {
+   /* /* height: 10vh; */
+   min-height: 100px;
+  
+    text-transform:  uppercase;
+    font-weight: bold;
+    text-align: center;
+    border: 4px solid gold;
+   
+}
+
+.cell-1 {
+    background-size: contain;
+    background-image: url('https://philenius.github.io/assets/2021-03-31/cover.png');
+    background-repeat: no-repeat;
+    min-width: 240px;
+    text-shadow: 1px 1px white, 3px 3px blue;
+}
+
+.cell-1 > .logo-container {
+    height: fit-content;
+}
+
+.cell-2 {
+    background-color: aqua;
+}
+
+.cell-3 {
+    background-color: rgb(0, 255, 38);
+}
+
+.cell-4 {
+    background-color: cadetblue;
+
+}
+
+.cell-5 {
+    background-color: blue;
+}
+
+.cell-6 {
+    background-color: darkblue;
+}
+
+
+
+.header-container {
+    display: grid;
+    grid-template-columns: [start] 1fr 2fr .5fr [end];
+    grid-template-rows: [start] 1fr 1fr 1fr 1fr[almost] 1fr 1fr [end];
+    border: 2px solid grey;
+    column-gap: 5vw;
+    row-gap: 5vh;
+    /* justify-content: flex-end; */
+}
+
+.header-cell {
+    /* height: 10vh; */
+    /* min-height: 100px; */
+    
+   
+     text-transform:  uppercase;
+     font-weight: bold;
+     text-align: center;
+   
+   
+     border: 1px solid gold;
+ }
+
+.first-h2 {
+    background: none;
+}
+
+.box-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.box-2 {
+    grid-column-start: 2;
+    
+}
+
+.last-box {
+    /* grid-row: end; */
+    grid-column: start/end;
+}
+
+
+.main-content {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: repeat(3, 1fr);
+    border: 2px solid grey;
+    column-gap: 20px;
+
+    grid-template-areas: 
+    "a a b"
+    "a a b"
+    "c c b"
+    "d d d" 
+    "e f f"
+    ;
+
+   
+}
+
+.main-1 {
+    grid-area: a;
+}
+
+
+.main-cell {
+    /* /* height: 10vh; */
+    min-height: 100px;
+     
+   
+     text-transform:  uppercase;
+     font-weight: bold;
+     text-align: center;
+     border: 4px solid gold;
+ }
+
+
+ .second-content {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    /* justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-evenly;
+    justify-content: space-around; */
+    justify-content: space-between;
+    /* align-content: center; */
+    align-content: flex-end;
+ }
+
+ .second-cell {
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 50%;
+    justify-items: center;
+    text-align: center;
+ }
+
+ .second-2 {
+    /* justify-self: end; */
+ }
+
+
+.third-content {
+    margin-top: 20px;
+    display: grid;
+    min-height: 200px;
+ 
+    /* grid-template-columns: repeat(auto-fill, 300px); */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    align-items: flex-start;
+    justify-items: flex-start;
+    background-color: blueviolet;
+    justify-content: space-around;
+}
+
+.third-cell {
+    margin-top: 20px;
+    min-height: 50px;
+    min-width: 100px;
+    align-self: center;
+    justify-self: center;
+    background-color: rgb(53, 53, 237);
+    text-align: center;
+    font-size: 2rem;
+}
+/* 
+.third-3 {
+    justify-self: flex-end;
+    align-self: flex-start;
+   
+} */
+
+.outside-box {
+    min-height: 75px;
+    min-width: 150px;
+    background-color: chartreuse;
+}
+
+
+
+
+.fifth-content {
+    margin-top: 20px;
+    display: grid;
+    min-height: 200px;
+ 
+    /* grid-template-columns: repeat(auto-fill, 300px); */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    align-items: flex-start;
+    justify-items: flex-start;
+    background-color: blueviolet;
+    justify-content: space-around;
+}
+
+.fifth-cell {
+    margin-top: 20px;
+    min-height: 50px;
+    min-width: 100px;
+    align-self: center;
+    justify-self: center;
+    background-color: rgb(53, 53, 237);
+    text-align: center;
+    font-size: 2.5rem;
+    color: azure;
+}
+
+
+
+
+
+
+
